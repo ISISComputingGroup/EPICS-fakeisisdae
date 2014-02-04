@@ -1,0 +1,289 @@
+record(stringin, "$(P)TITLE")
+{
+    field(VAL, "Simulated run")
+}
+
+record(stringin, "$(P)RBNUMBER")
+{
+}
+
+record(stringin, "$(P)RUNNUMBER")
+{
+    field(VAL, 42)
+}
+
+record(stringin, "$(P)USERNAME")
+{
+    field(VAL, "Test user")
+}
+
+record(stringin, "$(P)INSTNAME")
+{
+    field(VAL, "LARMOR")
+}
+
+record(stringin, "$(P)STARTTIME")
+{
+}
+
+record(stringin, "$(P)NPRATIO")
+{
+}
+
+record(stringin, "$(P)RUNSTATUS_STR")
+{
+    field(VAL, "SIMULATING")
+}
+
+record(stringin, "$(P)DAETIMINGSOURCE")
+{
+}
+
+record(stringin, "$(P)PERIODTYPE")
+{
+}
+
+record(stringin, "$(P)ISISCYCLE")
+{
+}
+
+record(longin, "$(P)RAWFRAMES")
+{
+    field(VAL, 123456)
+}
+
+record(longin, "$(P)RAWFRAMES_PD")
+{
+}
+
+record(longin, "$(P)GOODFRAMES")
+{
+    field(VAL, 23456)
+}
+
+record(longin, "$(P)GOODFRAMES_PD")
+{
+}
+
+record(longin, "$(P)RUNDURATION")
+{
+    field(VAL, 456)
+}
+
+record(longin, "$(P)RUNDURATION_PD")
+{
+    field(VAL, 123456)
+}
+
+record(longin, "$(P)NUMTIMECHANNELS")
+{
+}
+
+record(longin, "$(P)DAEMEMORYUSED")
+{
+}
+
+record(longin, "$(P)NUMSPECTRA")
+{
+}
+
+record(longin, "$(P)MONITORCOUNTS")
+{
+    field(VAL, 123456)
+}
+
+record(longin, "$(P)MONITORSPECTRUM")
+{
+}
+
+record(longin, "$(P)PERIODSEQ")
+{
+}
+
+record(ai, "$(P)BEAMCURRENT")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)TOTALUAMPS")
+{
+    field(PREC, "3")
+    field(VAL, 3456)
+}
+
+record(ai, "$(P)TOTALDAECOUNTS")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)MONITORTO")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)MONITORFROM")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)COUNTRATE")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)EVENTMODEFRACTION")
+{
+    field(PREC, "3")
+}
+
+record(ai, "$(P)GOODUAH")
+{
+    field(PREC, "3")
+    field(VAL, 456)
+}
+
+record(ai, "$(P)GOODUAH_PD")
+{
+    field(PREC, "3")
+}
+
+record(bo, "$(P)BEGINRUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)BEGINRUNEX")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)ABORTRUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)PAUSERUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)RESUMERUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)ENDRUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)RECOVERRUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)SAVERUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)UPDATERUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(bo, "$(P)STORERUN")
+{
+    field(ZNAM, "0")
+    field(ONAM, "1")
+}
+
+record(ai, "$(P)RUNSTATUS")
+{
+}
+
+record(ai, "$(P)PERIOD")
+{
+    field(VAL, 2)
+}
+
+record(ao, "$(P)PERIOD:SP")
+{
+}
+
+alias("$(P)PERIOD", "$(P):PERIOD:SP:RBV")
+
+record(ai, "$(P)NUMPERIODS")
+{
+    field(VAL, 6)
+}
+
+record(ai, "$(P)TOTALCOUNTS")
+{
+    field(VAL, 123456)
+}
+
+record(ai, "$(P)HISTMEMORY")
+{
+}
+
+record(ai, "$(P)SPECTRASUM")
+{
+}
+
+record(waveform, "$(P)DAESETTINGS")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)DAESETTINGS:SP")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)TCBSETTINGS")
+{
+    field(NELM, "10000")
+    field(FTVL, "UCHAR")
+}
+
+record(waveform, "$(P)TCBSETTINGS:SP")
+{
+    field(NELM, "10000")
+    field(FTVL, "UCHAR")
+}
+
+record(waveform, "$(P)HARDWAREPERIODS")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)HARDWAREPERIODS:SP")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)UPDATESETTINGS")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
+
+record(waveform, "$(P)UPDATESETTINGS:SP")
+{
+    field(NELM, "10000")
+    field(FTVL, "CHAR")
+}
